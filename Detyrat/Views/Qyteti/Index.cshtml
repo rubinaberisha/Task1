@@ -1,0 +1,11 @@
+﻿<h1>Zgjidhni Qytetin</h1>
+
+<ul style="list-style:none;">
+    @foreach (var city in (IEnumerable<dynamic>)ViewBag.Cities)
+    {
+        <li style="margin: 10px;">
+            <a class="btn btn-primary" href="/qyteti/@city.Id">@city.Emri</a>
+        </li>
+    }
+</ul>
+
