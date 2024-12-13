@@ -4,7 +4,7 @@
     @foreach (var city in (IEnumerable<dynamic>)ViewBag.Cities)
     {
         <li style="margin: 10px;">
-            <a class="btn btn-primary" href="/qyteti/@city.Id">@city.Emri</a>
+            <a class="btn btn-primary" style="width:200px" ; href="/qyteti/@city.Id">@city.Emri</a>
         </li>
     }
 </ul>
